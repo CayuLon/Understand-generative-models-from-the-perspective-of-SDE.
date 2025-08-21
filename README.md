@@ -4,7 +4,7 @@
 
 如0，s，k时刻样本的加噪如下所示，k-s>1：
 
-<img src="images/ddim-17557838937787.png" alt="ddim" style="zoom:33%;" />
+<img src="images/ddim.png" alt="ddim" style="zoom:33%;" />
 
 有$x_k=\sqrt{\bar{\alpha}_k} \cdot x_0 + \sqrt{1-\bar{\alpha}_k}\cdot \epsilon=\mathcal{N}(\sqrt{\bar{\alpha}_k} \cdot x_0, (1-\bar{\alpha}_k)\mathbf{I})$，后验分布：
 
