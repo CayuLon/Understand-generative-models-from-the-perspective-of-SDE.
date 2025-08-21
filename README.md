@@ -41,7 +41,7 @@
 	\begin{split}x_s&=\mu+\sigma\epsilon\\&=\sqrt{\bar{\alpha}_s}x_0 + \sqrt{1-\bar{\alpha}_s-\sigma^2} \cdot\epsilon_1 + \sigma \epsilon \\&= \sqrt{\bar{\alpha}_s} \cdot \frac{x_k-\sqrt{1-\bar{\alpha}_k} \cdot \epsilon_1 }{\sqrt{\bar{\alpha}_k}} + \sqrt{1-\bar{\alpha}_s-\sigma^2} \cdot\epsilon_1 + \sigma \epsilon\end{split}        (6)
 ```
 
-其中，$\epsilon_1\rightarrow pred$。即可实现从$x_k$跳步到$x_s$。
+其中， $\epsilon_1\rightarrow pred$ 。即可实现从 $x_k$ 跳步到 $x_s$ 。
 
 
 
