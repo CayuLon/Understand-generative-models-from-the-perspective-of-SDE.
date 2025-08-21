@@ -16,7 +16,7 @@
 
 联立前向加噪和（2），可得：
 
-​												$$\begin{cases}m \sqrt{\bar{\alpha}_k} + k = \sqrt{\bar{\alpha}_s} \\m^2 (1-\bar{\alpha}_k) + \sigma^2 = 1-\bar{\alpha}_s\end{cases}$$ 															(**3**)
+​							$$\begin{cases}m \sqrt{\bar{\alpha}_k} + k = \sqrt{\bar{\alpha}_s} \\m^2 (1-\bar{\alpha}_k) + \sigma^2 = 1-\bar{\alpha}_s\end{cases}$$ 												(**3**)
 
 解得：
 
