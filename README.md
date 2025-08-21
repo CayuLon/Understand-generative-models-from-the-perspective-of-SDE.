@@ -1,1 +1,0 @@
-# Understand-generative-models-from-the-perspective-of-SDE.
