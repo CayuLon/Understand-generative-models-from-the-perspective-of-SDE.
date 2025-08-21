@@ -51,7 +51,7 @@
 
 ![SDE](images/SDE.png)
 
-因为$w(t+\Delta t)-w(t) \sim \mathcal{N}(0,\Delta t)$，则$|dw|=\sqrt{dt}\cdot\epsilon$，那么DDPM的前向 $x_t = \sqrt{1-\beta_t}x_{t-1} + \sqrt{\beta_t}\epsilon$连续化形式：
+因为 $w(t+\Delta t)-w(t) \sim \mathcal{N}(0,\Delta t)$，则 $|dw|=\sqrt{dt}\cdot\epsilon$ ，那么DDPM的前向 $x_t = \sqrt{1-\beta_t}x_{t-1} + \sqrt{\beta_t}\epsilon$ 连续化形式：
 
 ```math
 ​	\begin{split} x(t+\Delta t) &= \sqrt{1-\beta_t \Delta t} \cdot x_t + \sqrt{\beta_t \Delta t} \cdot \epsilon , \Delta t \rightarrow 0 \\ & \overset{Taylor}{\approx} (1-\frac{1}{2}\beta_t \Delta t)x_t + \sqrt{\beta_t}dw\end{split}       		    （7）
@@ -73,7 +73,7 @@
 ```math
 ​	\begin{split} x_{t-1} &= (x_t + \beta_t S_\theta(t)) (1+\frac{1}{2}\beta_t)-\frac{1}{2}\beta_t^2 S_\theta(t) + \sqrt{\beta_t} \epsilon \\ & \approx \frac{1}{\sqrt{1-\beta_t}} (x_t + \beta_t S_\theta(t)) + \sqrt{\beta_t}\epsilon \end{split}  （11）
 ```
-而$S_\theta(t)=\bigtriangledown_xlogp_t(x) $，$p_t(x)\sim\mathcal{N}(\mu, \sigma)$，则$S_\theta(t)$为：
+而 $S_\theta(t)=\bigtriangledown_xlogp_t(x)$ ， $p_t(x)\sim\mathcal{N}(\mu, \sigma)$ ，则 $S_\theta(t)$ 为：
 
 
 
