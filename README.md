@@ -32,7 +32,7 @@
 将m，k代回式（1），则
 
 ```math
-	\begin{split}\mu &= mx_k+kx_0 \\ &= m(\sqrt{\bar{\alpha}_k} \cdot x_0 + \sqrt{1-\bar{\alpha}_k}\cdot \epsilon_1) + kx_0 \\ &= \sqrt{\bar{\alpha}_s}x_0 + \sqrt{1-\bar{\alpha}_s-\sigma^2} \cdot\epsilon_1\end{split						 (5)
+	\begin{split}\mu &= mx_k+kx_0 \\ &= m(\sqrt{\bar{\alpha}_k} \cdot x_0 + \sqrt{1-\bar{\alpha}_k}\cdot \epsilon_1) + kx_0 \\ &= \sqrt{\bar{\alpha}_s}x_0 + \sqrt{1-\bar{\alpha}_s-\sigma^2} \cdot\epsilon_1\end{split}						 (5)
 ```
 
 所以
