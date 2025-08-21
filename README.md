@@ -4,7 +4,7 @@
 
 如0，s，k时刻样本的加噪如下所示，k-s>1：
 
-<img src="imgaes/ddim.png" alt="ddim" style="zoom:33%;" />
+<img src="images/ddim-17557838937787.png" alt="ddim" style="zoom:33%;" />
 
 有$x_k=\sqrt{\bar{\alpha}_k} \cdot x_0 + \sqrt{1-\bar{\alpha}_k}\cdot \epsilon=\mathcal{N}(\sqrt{\bar{\alpha}_k} \cdot x_0, (1-\bar{\alpha}_k)\mathbf{I})$，后验分布：
 
@@ -16,7 +16,7 @@
 
 联立前向加噪和（2），可得：
 
-​							$$\begin{cases}m \sqrt{\bar{\alpha}_k} + k = \sqrt{\bar{\alpha}_s} \\m^2 (1-\bar{\alpha}_k) + \sigma^2 = 1-\bar{\alpha}_s\end{cases}$$ 												(**3**)
+​												$$\begin{cases}m \sqrt{\bar{\alpha}_k} + k = \sqrt{\bar{\alpha}_s} \\m^2 (1-\bar{\alpha}_k) + \sigma^2 = 1-\bar{\alpha}_s\end{cases}$$ 															(**3**)
 
 解得：
 
@@ -38,7 +38,7 @@
 
 扩散模型将加噪过程分成了 T 个离散的步骤，而SDE视角则认为，从一张清晰的图像到一个纯噪声的状态，是一个**连续的轨迹**，时间 t 可以是 [0, T] 之间的任意实数。这个连续的过程由一个**随机微分方程 (stochastic differential equation, SDE)** 来精确描述。
 
-<img src="imgaes/SDE.png" alt="SDE" style="zoom: 33%;" />
+![SDE](images/SDE.png)
 
 因为$w(t+\Delta t)-w(t) \sim \mathcal{N}(0,\Delta t)$，则$|dw|=\sqrt{dt}\cdot\epsilon$，那么DDPM的前向 $x_t = \sqrt{1-\beta_t}x_{t-1} + \sqrt{\beta_t}\epsilon$连续化形式：
 
