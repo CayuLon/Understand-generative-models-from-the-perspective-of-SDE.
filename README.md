@@ -74,6 +74,13 @@
 ​	\begin{split} x_{t-1} &= (x_t + \beta_t S_\theta(t)) (1+\frac{1}{2}\beta_t)-\frac{1}{2}\beta_t^2 S_\theta(t) + \sqrt{\beta_t} \epsilon \\ & \approx \frac{1}{\sqrt{1-\beta_t}} (x_t + \beta_t S_\theta(t)) + \sqrt{\beta_t}\epsilon \end{split}  （11）
 ```
 而 $S_\theta(t)=\bigtriangledown_xlogp_t(x)$ ， $p_t(x)\sim\mathcal{N}(\mu, \sigma)$ ，则 $S_\theta(t)$ 为：
-
+```math
+\begin{split}S_\theta(t)&=\frac{\partial(-\frac{(x-\mu)^2}{2\sigma^2}- log\sqrt{2\pi}\sigma)}{\partial(x)}\\&=-\frac{x-\mu}{\sigma^2}\\&=-\frac{x-\sqrt{\bar{\alpha}_t}x_0}{1-\bar{\alpha}_t}\\&=-\frac{\hat{\epsilon}}{\sqrt{1-\bar{\alpha}_t}}\end{split}          (12)
+```
+则 $x_{t-1}$ 为：
+```math
+x_{t-1}=\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{(1-\alpha_t)}{\sqrt{1-\bar{\alpha}_t}}\hat{\epsilon})+\sqrt{\beta_t}\epsilon (13)
+```
+可见，（13）的形式与DDPM的一致，也就是说SDE统一了各类扩散模型。
 
 
