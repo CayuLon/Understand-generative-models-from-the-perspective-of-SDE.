@@ -85,4 +85,4 @@ x_{t-1}=\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{(1-\alpha_t)}{\sqrt{1-\bar{\alpha}_t
 
 ## 3. Flow matching
 ```
-see Flow matching.md
+See Flow matching.md
