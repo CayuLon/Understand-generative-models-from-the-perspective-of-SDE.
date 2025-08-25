@@ -83,6 +83,6 @@ x_{t-1}=\frac{1}{\sqrt{\alpha_t}}(x_t-\frac{(1-\alpha_t)}{\sqrt{1-\bar{\alpha}_t
 ```
 可见，（13）的形式与DDPM的一致，也就是说SDE统一了各类扩散模型。
 
-## Flow matching
+## 3. Flow matching
 ```
 see Flow matching.md
