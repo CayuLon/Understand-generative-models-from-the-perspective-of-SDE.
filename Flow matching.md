@@ -1,5 +1,5 @@
 ## Flow matching
-
+### Rectified flow
 1.  x0, x1    -->  flow matching 建模noise到original data的流： $x_t = t x_1 + (1-t)x_0$ , $x_0$ 是noise；
 
    DDPM是从original data到noise的加噪：($x_t = \sqrt{\bar{\alpha}_t}x_0+\sqrt{1-\bar{\alpha}_t}\epsilon$), $x_0$ 是original data。
