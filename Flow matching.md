@@ -8,7 +8,11 @@
 
 <img src="images/9f284b4e-4558-4062-9370-22b27ed290ad-17562097610292.png" alt="9f284b4e-4558-4062-9370-22b27ed290ad" style="zoom:50%;" />
 
-**3）Conditional vector field**: $\underbrace{x_0 \sim p_{init}}_{init}$ , $\color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}}$ , then $\Rightarrow$ $\underbrace{x_t \sim p_t(·|z)}_{progress}$ . And we formulate as: 
+**3）Conditional vector field**: 
+```math
+\underbrace{x_0 \sim p_{init}}_{init}, \color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}} \color{black}{,then \Rightarrow \underbrace{x_t \sim p_t(·|z)}_{progress}}.
+```
+And we formulate as: 
 <div align="center">
 
 $$
