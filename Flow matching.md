@@ -14,7 +14,7 @@
 ```
 And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t,$ which is the Interpolation of $z$ and $x_t$ .
 
-**4) Marginal vector field**: $\color{red} {u_t^{tar}(x_t)=\int u_t^{tar}(x_t|z)p_t(z|x_t) \,dz =\int u_t^{tar}(x_t|z) \frac{p_t(x_t|z)p_{data}(z)}{p_t(x_t)} \,dz}$. So, we can derive: $\color{red}{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t)} \Rightarrow x_t \sim p_t(x_t)$. i.e. Condition VF is equivalent to marginal VF iff the definition of $u_t^{tar}(x_t)$ as shown above.
+**4) Marginal vector field**: $\color{red} {u_t^{tar}(x_t)=\int u_t^{tar}(x_t|z)p_t(z|x_t) \,dz =\int u_t^{tar}(x_t|z) \frac{p_t(x_t|z)p_{data}(z)}{p_t(x_t)} \,dz}$. So, we can derive: $\color{red}{\frac{dx_t}{dt}=u_t^{tar}(x_t)} \Rightarrow x_t \sim p_t(x_t)$. i.e. Condition VF is equivalent to marginal VF iff the definition of $u_t^{tar}(x_t)$ as shown above.
 
 **​Proof:**
 ```math
@@ -31,8 +31,8 @@ And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\b
 
 All in all, the six objects are summarized as follow:
 
-<img src="images/conditinoal.png" alt="wechat_2025-08-26_173514_920" style="zoom: 25%;" />
-<img src="images/marginal.png" alt="wechat_2025-08-26_173658_261" style="zoom: 25%;" />
+<img src="images/conditional.png" alt="conditional" style="zoom: 25%;" />
+<img src="images/marginal.png" alt="marginal" style="zoom: 25%;" />
 
 
 
