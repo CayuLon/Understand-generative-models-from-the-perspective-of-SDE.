@@ -6,7 +6,7 @@
 
 **2）Marginal probability path**: $x\sim p_t$ ( forget z, and can be seen as the intermediate points or in the latent space ), and $p_t(x)=\int p_t(x|z)p_{data}(z) dz$, then $p_0(x)=p_{init}$, $p_1(x)=p_{data}$.
 
-<img src="images/9f284b4e-4558-4062-9370-22b27ed290ad-17562097610292.png" alt="9f284b4e-4558-4062-9370-22b27ed290ad" style="zoom:50%;" />
+<img src="images/prob_path.png" alt="9f284b4e-4558-4062-9370-22b27ed290ad" style="zoom:50%;" />
 
 **3）Conditional vector field**: 
 ```math
@@ -31,9 +31,8 @@ And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\b
 
 All in all, the six objects are summarized as follow:
 
-<img src="images/wechat_2025-08-26_173514_920.png" alt="wechat_2025-08-26_173514_920" style="zoom: 25%;" />
-
-<img src="images/wechat_2025-08-26_173658_261.png" alt="wechat_2025-08-26_173658_261" style="zoom: 25%;" />
+<img src="images/conditinoal.png" alt="wechat_2025-08-26_173514_920" style="zoom: 25%;" />
+<img src="images/marginal.png" alt="wechat_2025-08-26_173658_261" style="zoom: 25%;" />
 
 
 
