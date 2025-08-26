@@ -2,13 +2,21 @@
 
 ### 1. Six objects
 
-1）**Conditional probability path**: $p_t(·|z)=\mathcal{N}(\alpha_t z, \beta_t^2\mathbf{I})$,  $p_0(·|z)=p_{init}$,  $p_1(·|z)=p_{data}$. ( $t\in[0, 1]$ and $z\sim p_{data}$, $p_{init} \sim \mathcal{N}(0,\mathbf{I})$, $\alpha_0=0, \beta_0=1,\alpha_1=1,\beta_1=0$)
+**1）Conditional probability path**: $p_t(·|z)=\mathcal{N}(\alpha_t z, \beta_t^2\mathbf{I})$,  $p_0(·|z)=p_{init}$,  $p_1(·|z)=p_{data}$. ( $t\in[0, 1]$ and $z\sim p_{data}$, $p_{init} \sim \mathcal{N}(0,\mathbf{I})$, $\alpha_0=0, \beta_0=1,\alpha_1=1,\beta_1=0$)
 
-2）**Marginal probability path**: $x\sim p_t$ ( forget z, and can be seen as the intermediate points or in the latent space ), and $p_t(x)=\int p_t(x|z)p_{data}(z) \,dz$, then $p_0(x)=p_{init}$, $p_1(x)=p_{data}$.
+**2）Marginal probability path**: $x\sim p_t$ ( forget z, and can be seen as the intermediate points or in the latent space ), and $p_t(x)=\int p_t(x|z)p_{data}(z) \,dz$, then $p_0(x)=p_{init}$, $p_1(x)=p_{data}$.
 
 <img src="images/9f284b4e-4558-4062-9370-22b27ed290ad-17562097610292.png" alt="9f284b4e-4558-4062-9370-22b27ed290ad" style="zoom:50%;" />
 
-**3）Conditional vector field**: $\underbrace{x_0 \sim p_{init}}_{init}$ , $\color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}}$ , then $\Rightarrow$ $\underbrace{x_t \sim p_t(·|z)}_{progress}$ . And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t$ , which is the Interpolation of $z$ and $x_t$ .
+**3）Conditional vector field**: $\underbrace{x_0 \sim p_{init}}_{init}$ , $\color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}}$ , then $\Rightarrow$ $\underbrace{x_t \sim p_t(·|z)}_{progress}$ . And we formulate as: 
+<div align="center">
+
+$$
+u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t,
+$$
+
+</div>
+which is the Interpolation of $z$ and $x_t$ .
 
 **4) Marginal vector field**: $\color{red} {u_t^{tar}(x_t)=\int u_t^{tar}(x_t|z)p_t(z|x_t) \,dz =\int u_t^{tar}(x_t|z) \frac{p_t(x_t|z)p_{data}(z)}{p_t(x_t)} \,dz}$. So, we can derive: $\color{red}{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t)} \Rightarrow x_t \sim p_t(x_t)$. i.e. Condition VF is equivalent to marginal VF iff the definition of $u_t^{tar}(x_t)$ as shown above.
 
