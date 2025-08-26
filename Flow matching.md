@@ -10,7 +10,7 @@
 
 **3）Conditional vector field**: 
 ```math
-\underbrace{x_0 \sim p_{init}}_{init}, \color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}} \color{black}{,then \Rightarrow \underbrace{x_t \sim p_t(·|z)}_{progress}}.
+\underbrace{x_0 \sim p_{init}}_{init}, \color{red}{\underbrace{\frac{dx_t}{dt}=u_t^{tar}(x_t|z)}_{direction}} \color{black}{,then \Rightarrow \underbrace{x_t \sim p_t(·|z)}_{progress}}.
 ```
 And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t,$ which is the Interpolation of $z$ and $x_t$ .
 
