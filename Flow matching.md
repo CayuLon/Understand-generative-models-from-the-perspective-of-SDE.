@@ -8,11 +8,7 @@
 
 <img src="images/9f284b4e-4558-4062-9370-22b27ed290ad-17562097610292.png" alt="9f284b4e-4558-4062-9370-22b27ed290ad" style="zoom:50%;" />
 
-**3）Conditional vector field**: $\underbrace{x_0 \sim p_{init}}_{init}$, $\color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}}$, then $\Rightarrow$ $\underbrace{x_t \sim p_t(·|z)}_{progress}$. And we formulate as:
-
-$u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t$, which is the Interpolation of $z$ and $x_t$.
-
-
+**3）Conditional vector field**: $\underbrace{x_0 \sim p_{init}}_{init}$ , $\color{red}{\underbrace{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t|z)}_{direction}}$ , then $\Rightarrow$ $\underbrace{x_t \sim p_t(·|z)}_{progress}$ . And we formulate as: $u_t^{tar}(x_t|z)=(\dot{\alpha}_t - \frac{\dot{\beta}_t}{\beta_t})z+\frac{\dot{\beta}_t}{\beta_t}x_t$ , which is the Interpolation of $z$ and $x_t$ .
 
 **4) Marginal vector field**: $\color{red} {u_t^{tar}(x_t)=\int u_t^{tar}(x_t|z)p_t(z|x_t) \,dz =\int u_t^{tar}(x_t|z) \frac{p_t(x_t|z)p_{data}(z)}{p_t(x_t)} \,dz}$. So, we can derive: $\color{red}{\frac{\,dx_t}{\,dt}=u_t^{tar}(x_t)} \Rightarrow x_t \sim p_t(x_t)$. i.e. Condition VF is equivalent to marginal VF iff the definition of $u_t^{tar}(x_t)$ as shown above.
 
