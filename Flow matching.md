@@ -1,6 +1,6 @@
 ## Flow matching
 
-### 1. Six objects
+### 1. The six key objects
 
 **1）Conditional probability path**: $p_t(·|z)=\mathcal{N}(\alpha_t z, \beta_t^2\mathbf{I})$,  $p_0(·|z)=p_{init}$,  $p_1(·|z)=p_{data}$. ( $t\in[0, 1]$ and $z\sim p_{data}$, $p_{init} \sim \mathcal{N}(0,\mathbf{I})$, $\alpha_0=0, \beta_0=1,\alpha_1=1,\beta_1=0$)
 
