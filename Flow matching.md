@@ -37,6 +37,7 @@ All in all, the six objects are summarized as follow:
 
 
 ### 2. Rectified flow
+转化了目标，使 $u_t^{tar} \equiv x_1 - x_0$ ,使其速度和路径尽可能是均速和直线转移， 采样效率提高。
 1.  x0, x1    -->  flow matching 建模noise到original data的流： $x_t = t x_1 + (1-t)x_0$ , $x_0$ 是noise；
 
    DDPM是从original data到noise的加噪：($x_t = \sqrt{\bar{\alpha}_t}x_0+\sqrt{1-\bar{\alpha}_t}\epsilon$), $x_0$ 是original data。
